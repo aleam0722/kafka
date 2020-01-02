@@ -14,7 +14,7 @@ public class KafkaProducerOpration  {
         Producer<Integer,String> producer = new KafkaProducer<Integer, String>(properties);
         System.out.println(producer);
 
-        ProducerRecord<Integer, String> record = new ProducerRecord<Integer, String>("hadoop", 10, "diaomao");
+        ProducerRecord<Integer, String> record = new ProducerRecord<Integer, String>("hadoop", 10, "nihao");
 
         producer.send(record);
         producer.close();
